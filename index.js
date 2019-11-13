@@ -18,6 +18,7 @@ function addTodo (event) {
 }
 
 function removeTodo (event) {
+  event.stopPropagation();
   event.target.parentNode.remove();
 }
 
